@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Stock Dashboard</title>
+
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="app">
+
+  <!-- Sidebar -->
+  <aside class="sidebar glass-strong">
+    <div class="brand">
+      <div class="logo">⚡</div>
+      <span class="brand-name">Stocks</span>
+    </div>
+
+    <div id="company-list" class="company-list"></div>
+  </aside>
+
+  <!-- Main -->
+  <div class="main">
+
+    <div class="content">
+
+      <!-- Header -->
+      <h2 id="chart-symbol">RELIANCE</h2>
+
+      <div class="price-row">
+        <span id="chart-price">₹0</span>
+        <span id="chart-change">0%</span>
+      </div>
+
+      <!-- Compare -->
+      <div class="compare-box">
+    <select id="compare1"></select>
+    <select id="compare2"></select>
+    <button class="compare-btn" onclick="compareStocks()">Compare</button>
+     </div>
+
+      <!-- Chart -->
+      <div class="chart-wrap">
+        <canvas id="stock-chart"></canvas>
+      </div>
+
+      <!-- Insights -->
+      <div id="insights-grid" class="insights-grid"></div>
+
+      <!-- Movers -->
+      <div id="movers" class="movers"></div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
