@@ -62,15 +62,3 @@ Market movement patterns
 Smital Kaginkar
 
 ---
-
-# 🚀 2. ADD TREND FEATURE (VERY EASY 🔥)
-
-👉 Add this in your `app.js`
-
-### ✅ Update `updateHeader()`
-
-```javascript
-const trend = change >= 0 ? "Bullish 📈" : "Bearish 📉";
-
-document.getElementById("chart-change").innerText =
-  `${pct}% • ${trend}`;
